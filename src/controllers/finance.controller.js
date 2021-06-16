@@ -1,16 +1,17 @@
-const data = require('../data/data.json')
-const crawler = require('../crawler/scrape')
 
-function view(req, res, next) {
-    res.send(data);
-}
+const getAllData = require('../crawler/data');
 
-async function find(req, res, nex) {
-    let codex = req.body.codex;
-    const data = await crawler.scrape(codex)
-
+async function findByCodex(req, res) {
+    let codex = req.params.id
+    const data = await getAllData.generalData(codex);
     res.json(data);
 }
 
-module.exports.view = view
-module.exports.find = find
+async function getAll(req, res, nex) {
+    let codex = req.body.codex;
+    const data = await getAllData.generalData(codex)
+    res.json(data);
+}
+
+module.exports.getAll = getAll
+module.exports.findByCodex = findByCodex

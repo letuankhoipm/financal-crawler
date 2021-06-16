@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
 const express = require('express')
+const findByCodex = require('./src/controllers/finance.controller')
 var app = express()
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
@@ -11,6 +11,7 @@ app.get('/', function (req, res) {
 app.listen(5000, function () {
     console.log('Server is Up')
 })
-
 const router = require('./src/routes/finance')
 app.use('/finance', router)
+
+app.get('/finance/:id', findByCodex.findByCodex);
