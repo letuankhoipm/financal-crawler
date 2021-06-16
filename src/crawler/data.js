@@ -1,7 +1,5 @@
 const request = require('request');
-const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
-const fs = require('fs');
 
 function combine(arr) {
     const newArr = [];

@@ -13,10 +13,6 @@
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
-    "mongoose": "^5.12.13",
-    "node-fetch": "^2.6.1",
-    "puppeteer": "^10.0.0",
     "request": "^2.88.2"
   }
 }
