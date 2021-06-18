@@ -41,5 +41,10 @@ http://localhost:5000/finance/getByPost
 "codex" : "VIC"
 }
 ```
+
+## Author
+letuankhoi@dev
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
