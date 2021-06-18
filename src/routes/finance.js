@@ -1,5 +1,7 @@
 const express = require('express')
-const finance = require('../controllers/finance.controller')
+const findByCode = require('../controllers/finance.controller')
 var router = express()
-router.post('/getAll', finance.getAll)
+
+router.post('/getByPost', findByCode.findByCodePost)
+
 module.exports = router

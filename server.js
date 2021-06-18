@@ -1,5 +1,5 @@
 const express = require('express')
-const findByCodex = require('./src/controllers/finance.controller')
+const findByCode = require('./src/controllers/finance.controller')
 var app = express()
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
@@ -14,4 +14,4 @@ app.listen(5000, function () {
 const router = require('./src/routes/finance')
 app.use('/finance', router)
 
-app.get('/finance/:id', findByCodex.findByCodex);
+app.get('/finance/:id', findByCode.findByCodexGet);

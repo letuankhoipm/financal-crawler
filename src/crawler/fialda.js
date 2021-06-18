@@ -124,4 +124,4 @@ function fialda(codex) {
     })
 }
 
-module.exports.generalData = fialda
+module.exports.fialda = fialda
